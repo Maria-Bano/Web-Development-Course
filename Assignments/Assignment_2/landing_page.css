@@ -1,0 +1,35 @@
+header{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between search and logo */
+    width: 100%;
+    padding: 10px;
+}
+
+.search-box img {
+    height: 24px; /* Adjust size */
+    margin-left: 10px; /* Space from the left */
+}
+
+.logo-box img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 20px; /* Space from the right */
+    max-width: 150px; /* Prevent logo from overflowing */
+    padding-top: 30px;
+    padding-right: 0%;
+    position: relative;
+}
