@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - In The Style</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header (same as your main page) -->
+    <div class="top">
+        <p class="top-para">FREE UK STANDARD DELIVERY ON ORDERS OVER £50</p>
+    </div>
+
+    <div class="Nav">
+        <nav class="navbar">
+            <div class="nav-left"> 
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-center">
+                <h1><span>IN THE</span> STYLE</h1>
+            </div>
+            <div class="nav-right">
+                <i class="far fa-heart"></i>
+                <span>United Kingdom (GBP £) ⌄</span>
+                <i class="far fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Checkout Form -->
+    <div class="checkout-container">
+        <div class="checkout-header">
+            <h1><span>IN THE</span> STYLE</h1>
+            <div class="checkout-progress">
+                <span class="active">Bag</span>
+                <span class="active">Information</span>
+                <span>Shipping</span>
+                <span>Payment</span>
+            </div>
+        </div>
+
+        <div class="checkout-content">
+            <!-- Contact Info Section (Will Auto-Fill) -->
+            <div class="contact-section">
+                <h3>Contact</h3>
+                <div class="contact-email" id="user-email">Loading your email...</div>
+                <div class="marketing-optin">
+                    <input type="checkbox" id="marketing-email">
+                    <label for="marketing-email">Receive exclusive offers</label>
+                </div>
+            </div>
+
+            <!-- Shipping Form -->
+            <div class="shipping-section">
+                <h3>Shipping address</h3>
+                <form id="shipping-form">
+                    <div class="form-row">
+                        <select class="form-control">
+                            <option>Pakistan</option>
+                            <option>United Kingdom</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <input type="text" id="first-name" placeholder="First name" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <input type="text" id="last-name" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Address" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <input type="text" placeholder="ZIP code" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="user-phone" placeholder="Phone" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="checkout-actions">
+                <a href="web.html" class="back-link">← Return to cart</a>
+                <button class="continue-btn">Continue to Shipping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this script before closing body tag -->
+    <script>
+    // This will auto-fill user data when page loads
+    window.onload = function() {
+        // Get user data (we'll use localStorage for now)
+        const userEmail = localStorage.getItem('userEmail') || 'guest@example.com';
+        const userName = localStorage.getItem('userName') || '';
+        const userPhone = localStorage.getItem('userPhone') || '';
+        
+        // Fill the information
+        document.getElementById('user-email').textContent = userEmail;
+        
+        if(userName) {
+            const names = userName.split(' ');
+            document.getElementById('first-name').value = names[0] || '';
+            if(names.length > 1) {
+                document.getElementById('last-name').value = names.slice(1).join(' ');
+            }
+        }
+        
+        if(userPhone) {
+            document.getElementById('user-phone').value = userPhone;
+        }
+    };
+    </script>
+</body>
+</html>

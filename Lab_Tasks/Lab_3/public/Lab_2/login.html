@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - In The Style</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .login-btn {
+            background: black;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Same header as your main page -->
+    <div class="Nav">
+        <nav class="navbar">
+            <div class="nav-center">
+                <h1><span>IN THE</span> STYLE</h1>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required class="form-control">
+            <input type="text" id="loginName" placeholder="Full Name" class="form-control">
+            <input type="tel" id="loginPhone" placeholder="Phone" class="form-control">
+            <button type="submit" class="login-btn">LOGIN</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Save user data
+            localStorage.setItem("userEmail", document.getElementById("loginEmail").value);
+            localStorage.setItem("userName", document.getElementById("loginName").value);
+            localStorage.setItem("userPhone", document.getElementById("loginPhone").value);
+            
+            alert("Login successful!");
+            window.location.href = "web.html"; // Redirect to main page
+        });
+    </script>
+</body>
+</html>
