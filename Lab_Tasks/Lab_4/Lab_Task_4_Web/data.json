@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Laptop",
+    "description": "A powerful machine for developers",
+    "price": 999.99,
+    "imageUrl": "/images/products/img1.webp",
+    "category": "Electronics"
+  },
+  {
+    "name": "Phone",
+    "description": "A smart phone with cool features",
+    "price": 499.99,
+    "imageUrl": "/images/products/img1_2.webp",
+    "category": "Mobile"
+  },
+  {
+    "name": "Headphones",
+    "description": "Noise-cancelling over-ear headphones",
+    "price": 199.99,
+    "imageUrl": "/images/products/img2.webp",
+    "category": "Audio"
+  },
+  {
+    "name": "Smartwatch",
+    "description": "Track your fitness and notifications",
+    "price": 149.99,
+    "imageUrl": "/images/products/img3.webp",
+    "category": "Wearables"
+  },
+  {
+    "name": "Gaming Console",
+    "description": "Next-gen console for immersive gaming",
+    "price": 399.99,
+    "imageUrl": "/images/products/imgm1.webp",
+    "category": "Gaming"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "description": "Portable speaker with deep bass",
+    "price": 89.99,
+    "imageUrl": "/images/products/imgm2.webp",
+    "category": "Audio"
+  },
+  {
+    "name": "Tablet",
+    "description": "Lightweight tablet for work and play",
+    "price": 329.99,
+    "imageUrl": "/images/products/imgm2ss.webp",
+    "category": "Electronics"
+  },
+  {
+    "name": "Keyboard",
+    "description": "Mechanical keyboard with RGB lighting",
+    "price": 79.99,
+    "imageUrl": "/images/products/imgm3.webp",
+    "category": "Accessories"
+  },
+  {
+    "name": "Mouse",
+    "description": "Wireless ergonomic mouse",
+    "price": 49.99,
+    "imageUrl": "/images/products/imgm4.webp",
+    "category": "Accessories"
+  },
+  {
+    "name": "Webcam",
+    "description": "Full HD webcam for streaming and calls",
+    "price": 59.99,
+    "imageUrl": "/images/products/imgm5.webp",
+    "category": "Electronics"
+  },
+  {
+    "name": "Charger",
+    "description": "Fast charging USB-C charger",
+    "price": 24.99,
+    "imageUrl": "/images/products/imgm6.webp",
+    "category": "Mobile"
+  },
+  {
+    "name": "Monitor",
+    "description": "24-inch 1080p LED monitor",
+    "price": 149.99,
+    "imageUrl": "/images/products/imgm7.webp",
+    "category": "Electronics"
+  },
+  {
+    "name": "Camera",
+    "description": "Mirrorless digital camera",
+    "price": 599.99,
+    "imageUrl": "/images/products/imgm8.webp",
+    "category": "Photography"
+  },
+  {
+    "name": "Drone",
+    "description": "Camera drone with GPS and 4K video",
+    "price": 799.99,
+    "imageUrl": "/images/products/imgm9.webp",
+    "category": "Gadgets"
+  },
+  {
+    "name": "Power Bank",
+    "description": "10,000mAh portable power bank",
+    "price": 39.99,
+    "imageUrl": "/images/products/mainimg.webp",
+    "category": "Accessories"
+  },
+  {
+    "name": "VR Headset",
+    "description": "Immersive virtual reality headset",
+    "price": 299.99,
+    "imageUrl": "/images/products/mainimg2.webp",
+    "category": "Gaming"
+  }
+]

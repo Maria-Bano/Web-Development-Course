@@ -1,0 +1,205 @@
+<div class="top">
+    <p class="top-para">FREE UK STANDARD DELIVERY ON ORDERS OVER £50</p>
+</div>
+
+<div class="Nav">
+    <nav class="navbar">
+        <div class="nav-left"> 
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-center">
+            <h1><span>IN THE</span> STYLE</h1>
+        </div>
+        <div class="nav-right">
+            <i class="far fa-heart"></i>
+            <span>United Kingdom (GBP £) ⌄</span>
+            <% if (user) { %>
+                <a href="/user/profile" title="Logout">
+                    <i class="far fa-user"></i>
+                </a>
+            <% } else { %>
+                <a href="/auth/login" title="Login">
+                    <i class="far fa-user"></i>
+                </a>
+            <% } %>
+
+            <a href="/checkout2">
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+
+        </div>
+    </nav>
+</div>
+<div class="top-buttons">
+    <% if (user) { %>
+        <span>Welcome, <%= user.firstName %></span>
+        <a href="/auth/logout" class="btn btn-danger">Logout</a>
+    <% } else { %>
+        <a href="/auth/login" class="btn btn-outline-primary">Login</a>
+        <a href="/auth/register" class="btn btn-primary">Sign Up</a>
+    <% } %>
+</div>
+
+
+<div class="Container">
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sale
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            New In
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clothing
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dresses
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tops
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Wedding Shop
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Co-Ords
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Athleisure
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Coats & Jackets
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Trends & Occasions
+        </button>
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Clothing</h6></li>
+            <li><a class="dropdown-item" href="#">View All</a></li>
+            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+            <li><a class="dropdown-item" href="#">Athleisure</a></li>
+            <li><a class="dropdown-item" href="#">Blazers</a></li>
+            <li><a class="dropdown-item" href="#">Co-Ords</a></li>
+            <li><a class="dropdown-item" href="#">Dresses</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="promo-banner">
+    <span class="EXCLUSIVE_OFFERS">EXCLUSIVE OFFERS</span>
+    <span class="separator"></span>
+    <span>DAILY NEW ARRIVALS</span>
+    <span class="separator"></span>
+    <span>INSTANT ALERTS</span>
+    <span class="download">DOWNLOAD THE APP</span>
+    <img class="QR" src="icons/qrcode.webp" alt="QR code">
+</div>

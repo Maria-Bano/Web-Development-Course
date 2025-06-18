@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Checkout | InStyle</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Include your website's main header -->
+  <%- include('partials/header') %>
+
+  <!-- Checkout Form Content -->
+  <div class="checkout-page">
+    <div class="checkout-box">
+      <h2>Checkout</h2>
+      <form class="checkout-form" id="checkout-form" action = '/checkout' method = "POST">
+        <div class="form-group">
+          <label>Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required pattern="^[A-Za-z\s]+$" />
+        </div>
+
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number:</label>
+          <input type="text" id="phone" name="phone" required pattern="^\d{10,15}$" />
+        </div>
+
+        <div class="form-group">
+          <label>Address:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required pattern="^\d{5}$" />
+          </div>
+
+          <div class="form-group">
+            <label>Expiry:</label>
+            <input type="month" id="expiry" name="expiry" required />
+          </div>
+
+          <div class="form-group">
+            <label>CVV:</label>
+            <input type="text" id="cvv" name="cvv" required pattern="^\d{3}$" />
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Complete Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include your website's main footer -->
+  <%- include('partials/footer') %>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
